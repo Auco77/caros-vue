@@ -40,16 +40,13 @@ const picked = ref('');
   </div>
 
   <div class="f-container">
-    <h2>Radio</h2>
+    <h2>Radio <span v-if="picked"> 🤩{{ picked }}</span></h2>
     <template v-for="name in names" :key="name">
       <p>
         <input type="radio" :id="`rd${name}`" :value="name" v-model="picked" />
         <label :for="`rd${name}`" style="margin-left: 8px;">{{ name }}</label>
       </p>
     </template>
-    <p v-if="picked">
-      <b>{{ picked }}</b>
-    </p>
   </div>
 </template>
 <style>
