@@ -1,5 +1,6 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+import MyFetchingGitData from './components/MyFetchingGitData.vue';
 import MyForm01 from './components/MyForm01.vue';
 
 </script>
@@ -15,6 +16,7 @@ import MyForm01 from './components/MyForm01.vue';
 
   <main>
     <MyForm01/>
+    <MyFetchingGitData/>
   </main>
 </template>
 
